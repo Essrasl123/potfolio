@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Essra Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Essra</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="about-intro">
+        <h1>About Me</h1>
+        <p>Hello, I'm Essra, a passionate web developer, teacher, and lifelong learner. My journey in the world of web development started a few years ago, and I've been fascinated by it ever since. I enjoy combining creativity with problem-solving to create beautiful and functional websites and applications. I believe that learning never stops, and I am always looking for ways to improve my skills and stay up to date with the latest technologies.</p>
+    </section>
+    
+    <section class="career">
+        <h2>My Career</h2>
+        <p>I've worked in various fields, but my true passion has always been technology and education. Over the years, I've honed my skills in web development, learning languages like HTML, CSS, JavaScript, and Python, and combining them with design tools and frameworks. I also have experience as a teacher, where I share my knowledge with students and help them explore the world of programming.</p>
+    </section>
+    
+    <section class="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React</li>
+            <li><strong>Backend Development:</strong> Python, Node.js</li>
+            <li><strong>Design Tools:</strong> Figma, Adobe XD</li>
+            <li><strong>Other Technologies:</strong> Git, SQL, APIs</li>
+        </ul>
+    </section>
+    
+    <section class="recent-projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>This is the website you're currently viewing! It's built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Library Management System</h3>
+            <p>A simple library management system built with Python for the backend and HTML, CSS for the frontend. It allows users to track books and borrowing status.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </section>
+    
+    <section class="vision">
+        <h2>My Vision</h2>
+        <p>I believe in creating user-centered, clean, and functional websites and applications. Every project is an opportunity to learn something new and push the boundaries of what’s possible. I strive to write clean, maintainable code and deliver high-quality, scalable solutions for clients and users.</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Let’s Work Together</h2>
+        <p>If you're interested in collaborating or have any questions, feel free to reach out. I’m always open to new opportunities and challenges.</p>
+        <a href="#">Contact Me</a>
+    </section>
+
+    <script>
+        // Hamburger menu functions
+        function hamburg() {
+            document.querySelector('.dropdown').style.transform = "translateY(0)";
+        }
+        function cancel() {
+            document.querySelector('.dropdown').style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
